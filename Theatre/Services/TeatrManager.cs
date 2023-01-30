@@ -61,6 +61,9 @@ namespace Theatre.Services
                 if (item == null)
                     continue;
 
+                if (item.Zals is null)
+                    continue;
+
                 foreach (var zal in item.Zals) 
                 {
                     if (zal is null)

@@ -107,7 +107,7 @@ namespace Theatre
                     Console.WriteLine(existTeatr);
                 }
 
-                else if (command.ToLower().Equals("Add Session"))
+                else if (command.ToLower().Equals("add session"))
                 {
                     var seans1 = new Seans
                     {
@@ -122,8 +122,8 @@ namespace Theatre
                         {
                             Name = "Avatar",
                         },
-                        StartTime = DateTime.Now,
-                        EndTime = DateTime.Now,
+                        StartTime = "15:00",
+                        EndTime = "18:00",
                     };
 
                     var seans2 = new Seans
@@ -138,19 +138,19 @@ namespace Theatre
                         {
                             Name = " Sanctum"
                         },
-                        StartTime = DateTime.Now,
-                        EndTime = DateTime.Now ,
+                        StartTime = "19:00",
+                        EndTime = "22:00" ,
                     };
 
                     seansManager.Add(seans1);
                     seansManager.Add(seans2);
                 }
-                else if (command.ToLower().Equals("Show Session"))
+                else if (command.ToLower().Equals("show session"))
                 {
                     seansManager.Print();
                 }
 
-                else if (command.ToLower().Equals("Choose Session"))
+                else if (command.ToLower().Equals("choose session"))
                 {
                     Console.Write("Enter the ID:");
                     var id = int.Parse(Console.ReadLine());
@@ -162,7 +162,7 @@ namespace Theatre
                     Console.WriteLine(existSeans);
                 }
 
-                else if (command.ToLower().Equals("Show Seats"))
+                else if (command.ToLower().Equals("show seats"))
                 {
                     Zal zal = new();
 

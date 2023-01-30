@@ -29,7 +29,7 @@ namespace Theatre.Models
 
                 for (int column = 0; column < 10; column++)
                 {
-                    Console.Write($"{seats[row, column] = 1}");
+                    Console.Write($"{seats[row, column] = 0}");
                 }
 
                 Console.WriteLine();
@@ -41,11 +41,6 @@ namespace Theatre.Models
             Console.WriteLine("Seats\n");
             PrintSeats();
             return $"{Id}  {Name}";
-        }
-
-        public static implicit operator string(Zal v)
-        {
-            throw new NotImplementedException();
         }
     }
 }

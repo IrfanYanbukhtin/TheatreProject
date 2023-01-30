@@ -10,11 +10,11 @@ namespace Theatre.Models
 {
     internal class Seans : Entity
     {
-        internal DateTime StartTime { get; set; }
-        internal DateTime EndTime { get; set; }
+        internal string StartTime { get; set; }
+        internal string EndTime { get; set; }
 
-        internal string Zal { get; set; }
-        internal string Film { get; set; }
+        internal Zal Zal { get; set; }
+        internal Film Film { get; set; }
 
         public override string ToString()
         {
